@@ -1,0 +1,21 @@
+﻿.buttonMargin {
+    margin: 10px;
+    width: 80px;
+}
+
+.slotActive {
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+.zindex {
+    z-index: 1;
+}
+
+.zindexfront {
+    z-index: 2;
+}
+
+.zindextexts {
+    z-index: 3;
+}
