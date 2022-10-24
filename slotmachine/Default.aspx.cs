@@ -1,15 +1,8 @@
-﻿using Microsoft.Ajax.Utilities;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using slotmachine.connection;
-using slotmachine.slotspinEnum;
-using System.EnterpriseServices;
-using Newtonsoft.Json.Linq;
 using slotmachine.cases;
 
 namespace slotmachine

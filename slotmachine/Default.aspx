@@ -32,12 +32,14 @@
                         <asp:Button CssClass="btn btn-dark buttonMargin zindextexts" ID="login" runat="server" Text="Login" OnClick="login_Click" />
                         <asp:Button CssClass="btn btn-secondary buttonMargin zindextexts" ID="clear" runat="server" Text="Clear" />
                         <asp:Button CssClass="btn btn-dark buttonMargin zindextexts" disabled ID="exit" runat="server" Text="Logout" OnClick="exit_Click" />
-                    </div>
-                    <div class="d-xxl-flex justify-content-xxl-center" style="text-align: center;">
-                        <asp:Button CssClass="btn btn-info zindextexts" ID="addcredit" runat="server" Text="+5 Credit" OnClick="addcredit_Click" />
+                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: red; margin-left: 0px;"></div>
+                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: black; margin-left: 820px;"></div>
+                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: blue; margin-left: -820px;"></div>
+                        <div class="d-xxl-flex justify-content-xxl-center" style="text-align: center; z-index: 3;">
+                            <asp:Button CssClass="btn btn-info zindextexts" ID="addcredit" runat="server" Text="+5 Credit" OnClick="addcredit_Click" />
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section style="padding: 30px;">
             <div class="row">
@@ -65,13 +67,13 @@
                 </div>
             </div>
             <asp:Panel ID="slotdiv" CssClass="row" runat="server">
-                <div class="col aos-init aos-animate" data-aos="slide-down" data-aos-duration="200" style="text-align: center;">
+                <div class="col" style="text-align: center;">
                     <asp:Image ID="image3" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
                 </div>
-                <div class="col aos-init aos-animate" data-aos="slide-down" data-aos-duration="200" data-aos-delay="100" style="text-align: center;">
+                <div class="col" style="text-align: center;">
                     <asp:Image ID="image2" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
                 </div>
-                <div class="col aos-init aos-animate" data-aos="slide-down" data-aos-duration="200" data-aos-delay="200" style="text-align: center;">
+                <div class="col" style="text-align: center;">
                     <asp:Image ID="image1" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
                 </div>
             </asp:Panel>
