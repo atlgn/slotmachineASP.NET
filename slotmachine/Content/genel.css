@@ -1,0 +1,15 @@
+﻿
+.slot {
+    position: absolute;
+    -webkit-animation: slotanim 2s;
+}
+
+@-webkit-keyframes slotanim {
+    from {
+        top: -500px;
+    }
+
+    to {
+        top: 200px;
+    }
+}

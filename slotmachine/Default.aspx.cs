@@ -51,7 +51,7 @@ namespace slotmachine
                 }
                 else
                 {
-                    throw new Exception();
+                    ClientScript.RegisterStartupScript(Page.GetType(), "alert", "alert('Username or password wrong!');window.location='Default.aspx';", true);
                 }
             }
         }
@@ -83,7 +83,7 @@ namespace slotmachine
         public void refleshPage(object sender, EventArgs e)
         {
             Win.Text = Session["wins"].ToString();
-            Credit.Text = Session["credits"].ToString();
+            Credit.Text = Session["credits"].ToString()+"$";
             Welcome.Text = Session["username"].ToString();
             exit.Attributes.Remove("disabled");
         }

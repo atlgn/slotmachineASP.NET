@@ -9,15 +9,17 @@
     <title><%: Page.Title %> - Slot Machine App</title>
 
     <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/aos") %>
     </asp:PlaceHolder>
 
     <webopt:BundleReference runat="server" Path="~/assets/bootstrap/css/" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/genel.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/genel.css">   
+    <link rel="stylesheet" href="assets/bootstrap/css/aos.css">
+    <link rel="stylesheet" href="Content/aos.css">
+    <link rel="stylesheet" href="Content/genel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <form runat="server">

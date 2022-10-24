@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="slotmachine._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <script>
+        AOS.init();
+    </script>
     <div class="container" style="padding: 20px;">
         <section>
             <div class="row">
@@ -30,24 +33,24 @@
                 <div class="col">
                     <div class="d-sm-flex justify-content-sm-center align-items-sm-center zindextexts" style="text-align: center;">
                         <asp:Button CssClass="btn btn-dark buttonMargin zindextexts" ID="login" runat="server" Text="Login" OnClick="login_Click" />
-                        <asp:Button CssClass="btn btn-secondary buttonMargin zindextexts" ID="clear" runat="server" Text="Clear" />
                         <asp:Button CssClass="btn btn-dark buttonMargin zindextexts" disabled ID="exit" runat="server" Text="Logout" OnClick="exit_Click" />
-                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: red; margin-left: 0px;"></div>
-                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: black; margin-left: 820px;"></div>
-                        <div style="position: absolute; width: 162px; height: 225px; z-index: 2; background: blue; margin-left: -820px;"></div>
-                        <div class="d-xxl-flex justify-content-xxl-center" style="text-align: center; z-index: 3;">
-                            <asp:Button CssClass="btn btn-info zindextexts" ID="addcredit" runat="server" Text="+5 Credit" OnClick="addcredit_Click" />
-                        </div>
+                        <div style="position: absolute; width: 250px; height: 232px; z-index: 2; background: white; margin-left: 0px; margin-top: 100px;"></div>
+                        <div style="position: absolute; width: 250px; height: 232px; z-index: 2; background: white; margin-left: 820px; margin-top: 100px;"></div>
+                        <div style="position: absolute; width: 250px; height: 232px; z-index: 2; background: white; margin-left: -820px; margin-top: 100px;"></div>
+                    </div>
+                    <div class="d-xxl-flex justify-content-xxl-center" style="text-align: center; z-index: 3;">
+                        <asp:Button CssClass="btn btn-info zindextexts" ID="addcredit" runat="server" Text="+5 Credit" OnClick="addcredit_Click" />
                     </div>
                 </div>
+            </div>
         </section>
         <section style="padding: 30px;">
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-around zindextexts" style="padding: 10px;">
-                        <div class="zindextexts">
+                        <div class="zindextexts ">
                             <label class="form-label" style="font-size: 25px;">Credit:&nbsp;</label>
-                            <span class="badge bg-warning" style="font-size: 25px;">
+                            <span class="badge bg-warning pulse animated" style="font-size: 25px;">
                                 <asp:Label ID="Credit" runat="server" Text="0"></asp:Label>
                             </span>
                         </div>
@@ -68,13 +71,25 @@
             </div>
             <asp:Panel ID="slotdiv" CssClass="row" runat="server">
                 <div class="col" style="text-align: center;">
-                    <asp:Image ID="image3" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    <div data-aos="slide-down"
+                        data-aos-delay="150"
+                        data-aos-duration="250">
+                        <asp:Image ID="image3" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    </div>
                 </div>
                 <div class="col" style="text-align: center;">
-                    <asp:Image ID="image2" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    <div data-aos="slide-down"
+                        data-aos-delay="200"
+                        data-aos-duration="250">
+                        <asp:Image ID="image2" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    </div>
                 </div>
                 <div class="col" style="text-align: center;">
-                    <asp:Image ID="image1" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    <div data-aos="slide-down"
+                        data-aos-delay="250"
+                        data-aos-duration="250">
+                        <asp:Image ID="image1" CssClass="img-fluid rounded-circle" Height="200px" runat="server" ImageUrl="assets/img/0.jpg" />
+                    </div>
                 </div>
             </asp:Panel>
             <div class="row">

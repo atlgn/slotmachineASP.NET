@@ -121,6 +121,10 @@
     <Content Include="assets\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\bootstrap\css\genel.css" />
     <Content Include="assets\img\wintable.png" />
+    <Content Include="assets\bootstrap\css\aos.css" />
+    <Content Include="Content\aos.css" />
+    <Content Include="Content\genel.css" />
+    <Content Include="Scripts\aos.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="assets\img\0.jpg" />
     <Content Include="assets\img\1.jpg" />
