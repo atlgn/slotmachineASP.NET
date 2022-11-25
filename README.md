@@ -1,7 +1,7 @@
 # slotmachine
 
-backend ASP.NET
-Frontend Bootstrap 5
-DB Azure
-
+backend ASP.NET </br>
+Frontend Bootstrap 5 </br>
+DB Azure</br>
+</br>
 https://slot.aliatilgan.com/
