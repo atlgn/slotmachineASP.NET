@@ -13,10 +13,10 @@ namespace slotmachine.connection
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-            builder.DataSource = "slotmachinedbserver.database.windows.net";
-            builder.UserID = "Darkmage1024";
-            builder.Password = "AaLi123-321";
-            builder.InitialCatalog = "slotmachine_db";
+            builder.DataSource = "slotmachine.database.windows.net";
+            builder.UserID = "slotmachine";
+            builder.Password = "slot123-";
+            builder.InitialCatalog = "slotmachine";
 
             return builder;
         }
